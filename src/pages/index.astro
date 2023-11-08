@@ -1,0 +1,34 @@
+---
+import BaseHead from "@/theme-simple/components/_blocks/baseHead.astro";
+import Header from "@/theme-simple/components/Header.astro";
+import TopBanner from "@/theme-simple/components/TopBanner.astro";
+import IndexBanner from "@/theme-simple/components/IndexBanner.astro";
+import IndexList from "@/theme-simple/components/IndexList.astro";
+import Footer from "@/theme-simple/components/Footer.astro";
+
+import Pagination from "@/theme-simple/components/layout/Pagination.astro";
+import ContentHtml from '@/theme-simple/components/layout/Content.astro'
+
+import "@/theme-simple/assets/styles/global.less";
+import { config } from "@/theme-simple/config";
+import { SITE_TITLE, SITE_DESCRIPTION } from "@/consts";
+
+---
+
+<html lang="en">
+  <head>
+    <BaseHead subtitle={SITE_TITLE} />
+  </head>
+  <body>
+    <div class=`h-screen`>
+      <Header />
+      <TopBanner title="欢迎来到我的博客" desc="这是一个热血的故事" />
+	  <ContentHtml>
+		<IndexBanner />
+        <IndexList />
+        <Pagination currentPage={1} lastPage={2} />
+		<Footer/>
+	  </ContentHtml>
+    </div>
+  </body>
+</html>
