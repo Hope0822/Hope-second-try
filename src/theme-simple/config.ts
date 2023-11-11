@@ -1,8 +1,8 @@
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
-import testImg1 from "@/theme-simple/assets/media/38.jpg";
-import testImg2 from "@/theme-simple/assets/media/37.jpg"
-import testImg3 from "@/theme-simple/assets/media/36.jpg"
-import testImg4 from "@/theme-simple/assets/media/33.jpg"
+import testImg1 from "@/theme-simple/assets/media/cover.png";
+import testImg2 from "@/theme-simple/assets/media/kiyo.png"
+import testImg3 from "@/theme-simple/assets/media/11.png"
+import testImg4 from "@/theme-simple/assets/media/22.jpg"
 
 const today = new Date();
 const copy = `© ${today.getFullYear()} YOUR NAME HERE.`;
