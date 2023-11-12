@@ -1,8 +1,9 @@
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
 import testImg1 from "@/theme-simple/assets/media/cover.png";
 import testImg2 from "@/theme-simple/assets/media/kiyo.png"
-import testImg3 from "@/theme-simple/assets/media/11.png"
+import testImg3 from "@/theme-simple/assets/media/11.jpg"
 import testImg4 from "@/theme-simple/assets/media/22.jpg"
+import bannerBg from '@/theme-simple/assets/media/11.jpg'
 
 const today = new Date();
 const copy = `© ${today.getFullYear()} YOUR NAME HERE.`;
@@ -16,10 +17,11 @@ export const config = {
         image: "/placeholder-social.jpg", // default image for meta tag.
         copy: copy,
         locales: "zh-CN", // 'en-us'
+        banner: bannerBg.src // 全局Banner图
     },
     author: {
-        name: "Mowang",
-        avatar: "https://avatars.githubusercontent.com/u/137391282?v=4",
+        name: "LiXiang",
+        avatar: "https://avatars.githubusercontent.com/u/147902417?v=4",
         bio: "Your bio",
     },
     menus: [
