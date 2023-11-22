@@ -3,7 +3,7 @@ title: "个人博客的建立流程"
 pubDate: "2023-11-14 22:22:22"
 description: "关于个人博客的建立的笔记"
 heroImage: "http://localhost:4321/@fs/D:/code/Hope-second-try/src/theme-simple/assets/media/11.jpg?origWidth=2176&origHeight=1224&origFormat=jpg"
-tags: ["博客笔记"]
+tags: ["web"]
 ---
 
 # 个人博客的建立流程
@@ -49,9 +49,9 @@ git clone https
 ![上面的网址来源](D:\code\Hope-second-try\src\content\blog\2023-11-14-md\22.bmp)
 上面的步骤也许需要重复很多次，发生错误的话请保持网络稳定多试几遍
 ``` bash
-    //进入你存放文件的地址
-    pnpm i
-    pnpm dev
+//进入你存放文件的地址
+pnpm i
+pnpm dev
 ```
 pnpm dev可以告诉你你的网址，复制网址进入浏览器打开，就可以看到网站的界面。恭喜你已经成功了一大半了。
 
@@ -67,8 +67,8 @@ pnpm dev可以告诉你你的网址，复制网址进入浏览器打开，就可
 #### 本地测试
 在上传之前，我们最好在本地测试一下效果，口令和操作也很简单。
 ``` bash
-    //进入你存放文件的地址
-    pnpm dev
+//进入你存放文件的地址
+pnpm dev
 ```
 复制网址进入，你就可以看到修改后的样子，如果有不满意的地方就回到编辑器继续修改。
 如果发现没有修改？你需要检查：
@@ -78,11 +78,11 @@ pnpm dev可以告诉你你的网址，复制网址进入浏览器打开，就可
 #### 上传
 进入命令提示符
 ``` bash
-    //进入你存放文件的地址
-    git init
-    git add .
-    git commit -m "name"
-    git push
+//进入你存放文件的地址
+git init
+git add .
+git commit -m "name"
+git push
 ```
 这就是最后一步了，也是需要耐心，保持网络的稳定，上传成功就快去你的网站上看看吧~~~
 如果没有成功，你需要检查：
