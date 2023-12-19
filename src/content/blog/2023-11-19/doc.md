@@ -1,6 +1,6 @@
 ---
 title: "C++指针知识大总结"
-pubDate: "2023-11-19 09:00:00"
+pubDate: "2023-11-19"
 description: "C++学习了一段时间，对指针的使用变得频繁起来，本篇文章主要是梳理C++基础部分的指针使用，后续会随着学习的深入不断更新~~~"
 heroImage: "http://localhost:4321/@fs/D:/code/Hope-second-try/src/theme-simple/assets/media/11.jpg?origWidth=2176&origHeight=1224&origFormat=jpg" 
 tags: ["C++基础"]
