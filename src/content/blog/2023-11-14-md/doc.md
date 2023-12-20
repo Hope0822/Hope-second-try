@@ -79,6 +79,7 @@ pnpm dev
 进入命令提示符
 ``` bash
 //进入你存放文件的地址
+pnpm build
 git init
 git add .
 git commit -m "name"
