@@ -2,7 +2,7 @@
 title: "Linux 学习笔记"
 pubDate: "2023-12-20"
 description: "在寒假开始之前开始了Linux的学习~~~一点一点记录吧~~"
-heroImage: "https://imgcdn.hope-blog.top/2023-12-20/01.bmp" 
+heroImage: "http://localhost:4321/@fs/D:/code/Hope-second-try/src/theme-simple/assets/media/11.jpg?origWidth=2176&origHeight=1224&origFormat=jpg" 
 tags: ["Linux 学习笔记"]
 ---
 
