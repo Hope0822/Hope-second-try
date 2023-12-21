@@ -33,7 +33,7 @@ tags: ["web"]
 点击第一项“Create a new repository”进入后，填写你的项目名字(在这一步，最好将你的项目名字命名为ID.github.io，这样你就可以使用github赠送给你的域名)和描述，成功创建之后，你就可以在你的仓库中找到这个项目。
 
 #### recheck 这一步用于检测项目的克隆是否成功
-![查看入口](D:\code\Hope-second-try\src\content\blog\2023-11-14-md\11.bmp)
+![查看入口](https://imgcdn.hope-blog.top/2023-11-14-md/11.bmp)
 如果在你的首页看到了你刚刚创建的项目，说明上一步已经成功了。如果没有，说明的你的上一步出现了一些问题，请返回重新开始~~~
 
 #### pull
@@ -46,7 +46,7 @@ cd (你想存放的地址)
 git clone https
 ```
 
-![上面的网址来源](D:\code\Hope-second-try\src\content\blog\2023-11-14-md\22.bmp)
+![上面的网址来源](https://imgcdn.hope-blog.top/2023-11-14-md/22.bmp)
 上面的步骤也许需要重复很多次，发生错误的话请保持网络稳定多试几遍
 ``` bash
 //进入你存放文件的地址
