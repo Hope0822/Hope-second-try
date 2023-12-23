@@ -1,5 +1,5 @@
 ---
-title: "Linux 学习笔记"
+title: "Linux 学习笔记——chapter 1"
 pubDate: "2023-12-20"
 description: "在寒假开始之前开始了Linux的学习~~~一点一点记录吧~~"
 heroImage: "http://localhost:4321/@fs/D:/code/Hope-second-try/src/theme-simple/assets/media/11.jpg?origWidth=2176&origHeight=1224&origFormat=jpg" 
@@ -20,6 +20,16 @@ Linux是一个操作系统，而操作系统，是调度电脑的软件和硬件
 我使用的是[FinalShell](http://www.hostbuf.com/downloads/finalshell_install.exe)
 
 接下来就是连接虚拟机后做测试啦，测试完成后就可以开始正式的操作了！congratulations!
+
+##### 拍摄快照
+在对操作系统做修改时，可能会发生一些不可逆的损害，因此我们需要一个“存档点”，在每次造成了破坏时可以回到存档的状态。所以，在重要的节点为虚拟机拍摄快照是很有必要的。
+
+拍摄快照第一步，关闭虚拟机。
+
+
+![](https://imgcdn.hope-blog.top/2023-12-20/useradd.png)
+
+![](https://imgcdn.hope-blog.top/2023-12-20/useradd.png)
 
 ### 基础操作指令
 
@@ -215,6 +225,9 @@ tail -5 test.txt                   //从尾部开输出5行
 tail -f test.txt                   //追踪当前的变化（可以复制一个操作页面，对test文件做修改，当前文件会实时显示，使用Ctrl C结束追踪）
 
 ```
+
+### vim
+
 + vim
 vim 编辑器可以对文本内容进行编辑。vim总共有三种模式，键入vim默认进入命令模式，键盘的输入都会被视作快捷键，输入i可以就进入输入模式，从键盘上读取的视作修改。按Esc退出命令模式。还有一种底线命令模式。
 
@@ -229,6 +242,115 @@ cat hello.txt           //在主操作页面中可以查看修改后的内容。
 
 
 ```
+在vim中，许多操作都是直接靠快捷键完成的，所以熟练掌握这些快捷键是必不可少的。[快捷键一览](https://blog.csdn.net/weixin_43025343/article/details/132389295?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522170329542416800197036588%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=170329542416800197036588&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_click~default-2-132389295-null-null.142^v96^pc_search_result_base4&utm_term=vim%E5%BF%AB%E6%8D%B7%E9%94%AE&spm=1018.2226.3001.4187)
 
 
 
+### root用户
+root用户即超级管理员，操作系统都是多用户系统，普通用户的权限有一定限制，但是超级管理员有更大的权限。在Linux中的体现讲就是普通用户在根目录下是没有权限的，只有在home目录中有权限，所以需要对根目录做修改时就要切换到超root级管理员。
+
+
++ su - [user]
++ exit
+
+su(swith user)指令可以切换用户身份。exit可以退出root用户身份。
+
+``` bash
+su - root
+
+//输入密码就可以切换到root用户
+
+exit
+
+```
+
+
+
+但是长期以root用户的身份操作系统可能对系统造成损害，所以我们需要一个可以临时使用root用户的权限的指令。但是root用户的权限很重要不能随意使用，所以要使用root用户的权限的用户要先经过认证才会被授予临时访问权限。
+
++ 为普通用户配置 sudo 认证
+
+``` bash
+su - root
+visudo
+
+//自动打开一个权限文件
+
+itroy(用户名) ALL=(ALL)     NOPASSWD= ALL          //在文件最后一行加上
+exit
+：wq
+
+//配置完成
+```
+
+要取消一个普通用户的root临时访问权限只要在上面这个权限文件中删除权限开放指令就好。
+
++ sudo + 命令
+
+``` bash
+//在根目录下
+sudo mkdir hello.txt      //使用root的临时权限可以在根目录下操作
+```
+
+#### 用户用户组
+Linux支持多用户、多用户组、用户加入多个组；权限管控单元是用户级别和用户组级别。
+
+###### 用户、用户组相关管理命令
+
+创建新的用户和用户组
++ groupadd
++ groupdel
++ useradd
++ userdel
+![](https://imgcdn.hope-blog.top/2023-12-20/useradd.png)
+
+修改用户所所在用户组
++ usermod
+![](https://imgcdn.hope-blog.top/2023-12-20/usermod.png)
+
++ getent passwd
++ getent group
+![](https://imgcdn.hope-blog.top/2023-12-20/getent2.png)
+![](https://imgcdn.hope-blog.top/2023-12-20/getent3.png)
+
+#### 权限信息
+![](https://imgcdn.hope-blog.top/2023-12-20/权限.png)
+
+前面的十个槽位代表了文件的权限细节。大致可以分为4个板块，第一个板块描述文件是文件夹还是文件，第二、三、四块分别表示所属用户、所属用户组和其他用户的权限。
+
+![](https://imgcdn.hope-blog.top/2023-12-20/权限2.png)
+
+其中，rwx分别表示具体的权限信息。
++ r - read 可读
+文件夹ls可访问，文件cat可查看
++ w - write 可写
+文件夹mkdirke、rm可增加删除文件，文件可以修改内容
++ x 可执行
+文件夹可cd进入
+
+例如上图的home目录下的Desktop文件，itroy对Desktop文件夹的权限是rwx，itroy的权限是r-x，其他用户的权限是r-x。
+
+#### 修改权限信息
++ chmod -R 权限 目标文件或文件夹
+处在文件所属用户的身份下可以对文件或文件夹的权限进行修改。其中-R可以对文件夹中的全部文件修改为相同的权限。
+
+权限的修改格式：
++ ugo修改
+u(user)\g(group)\o(other)
+
++ 二进制数字修改
+用三位数字表示：
+--x   1
+-w-   2
+-wx   3
+r--   4
+r-x   5
+rw-   6
+rwx   7
+
+``` bash
+chmod -R u=rwx g=rx o=rx test.txt       //用ugo修改权限
+
+chmod -R 751 test.txt
+
+```
