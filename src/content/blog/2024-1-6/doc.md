@@ -17,7 +17,7 @@ tags: ["数据库"]
 ##### 通用语法
 + 不区分大小写
 + 以逗号结尾
-
++ --后面接着的表示注释
 
 ### DDL
 + 数据库操作
@@ -26,4 +26,33 @@ tags: ["数据库"]
 + 表操作
 ![](https://imgcdn.hope-blog.top/2024-1-6/22.png)
 （attention：创建表时最后一个项目不需要添加逗号）
+
++ 数据类型
+
+
+
++ 表的相关操作
+![](https://imgcdn.hope-blog.top/2024-1-6/33.png)
+![](https://imgcdn.hope-blog.top/2024-1-6/44.png)
+![](https://imgcdn.hope-blog.top/2024-1-6/55.png)
+
++ 图形化界面操作
+使用 datagrip 完成安装和连接 mysql 数据库之后可以在应用中直接以图形化的操作完成上面的操作
+![](https://imgcdn.hope-blog.top/2024-1-6/66.png)
+
+### DML
++ 表内容的修改
+关键字：updata 表名 set 字段名1=值1 ，字段名2=值2，[where 条件]；
+不加条件表示对所有内容进行修改，需要做进一步确认。
+
+![](https://imgcdn.hope-blog.top/2024-1-6/77.png)
+![](https://imgcdn.hope-blog.top/2024-1-6/88.png)
+
++ 表内容的删除
+delate语句不能删除某个字段的值，要删除某个字段的值可以使用上面的关键字update为NULL；
+关键字：delate from 表名 [where 条件]
+
+![](https://imgcdn.hope-blog.top/2024-1-6/99.png)
+
+
 
