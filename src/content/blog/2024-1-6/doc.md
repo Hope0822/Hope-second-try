@@ -27,10 +27,6 @@ tags: ["数据库"]
 ![](https://imgcdn.hope-blog.top/2024-1-6/22.png)
 （attention：创建表时最后一个项目不需要添加逗号）
 
-+ 数据类型
-
-
-
 + 表的相关操作
 ![](https://imgcdn.hope-blog.top/2024-1-6/33.png)
 ![](https://imgcdn.hope-blog.top/2024-1-6/44.png)
@@ -53,6 +49,45 @@ delate语句不能删除某个字段的值，要删除某个字段的值可以�
 关键字：delate from 表名 [where 条件]
 
 ![](https://imgcdn.hope-blog.top/2024-1-6/99.png)
+
+
+### DQL
+Data Query Languge  数据查询语言，是数据库最常用的方式。
+
++ 表内容的查询
+语法：select 字段名 from 表名；
+![](https://imgcdn.hope-blog.top/2024-1-6/10.png)
+
++ 条件查询
+语法：select 字段名 from 表名 where 条件；
+![](https://imgcdn.hope-blog.top/2024-1-6/12.png)
+
++ 聚合函数
+语法：select 聚合函数（要操作的字段名） from 表名；
+![](https://imgcdn.hope-blog.top/2024-1-6/13.png)
+
++ 分组查询
+语法：select 字段名 from 表名 group by 字段名；
+![](https://imgcdn.hope-blog.top/2024-1-6/14.png)
+
++ 排序查询
+语法：select 字段名 from 表名 order by 字段名 asc(顺序)/desc(逆序)；
+![](https://imgcdn.hope-blog.top/2024-1-6/15.png)
+
++ 分页查询
+语法：select 字段名 from 表名 limit 起始索引，查询记录数；
+![](https://imgcdn.hope-blog.top/2024-1-6/16.png)
+
++ DQL练习
+![](https://imgcdn.hope-blog.top/2024-1-6/17.png)
+
+
+
+
+
+
+
+
 
 
 
