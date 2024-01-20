@@ -1,7 +1,7 @@
 ---
-title: "MySQL数据库学习笔记 Chapter 1 ——通用语法"
+title: "MySQL数据库学习笔记 Chapter 1 ——SQL语句语法"
 pubDate: "2024-01-06"
-description: "开启新的篇章的学习~"
+description: "基础篇1"
 heroImage: "http://localhost:4321/@fs/D:/code/Hope-second-try/src/theme-simple/assets/media/11.jpg?origWidth=2176&origHeight=1224&origFormat=jpg" 
 tags: ["数据库"]
 ---
@@ -82,12 +82,14 @@ Data Query Languge  数据查询语言，是数据库最常用的方式。
 ![](https://imgcdn.hope-blog.top/2024-1-6/17.png)
 
 
+### DCL
+控制每一个数据库有哪些用户可以访问，以及每个用户具有怎样的访问权限。
 
+##### 管理用户权限
++ 用户的增加删除、修改密码。
+![](https://imgcdn.hope-blog.top/2024-1-6/21.png)
 
-
-
-
-
-
++ 用户权限的修改
+![](https://imgcdn.hope-blog.top/2024-1-6/23.png)
 
 
