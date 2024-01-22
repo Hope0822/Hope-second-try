@@ -17,7 +17,7 @@ tags: ["数模"]
 + 线性规划模型——一维切割问题
 + 图像处理
 + 空间距离- K聚类方法
-
++ 图论
 
 
 
@@ -76,7 +76,32 @@ ylabel '萼片宽度';
 使用下来，我觉得MATLAB最大的优点就是图像的反馈很清晰，使用很简便，属于初学者很好上手的一类工具，用这些工具来解决这些问题现得比较轻松。
 
 
+#### 图论
+图论部分涉及到很多算法，很庆幸很多都是离散数学课上讲过的，学起来也没有那么吃力啦。用MATLAB来设计最大的好处就是MATLAB的工具包中设计好了很多算法函数，查看函数相关帮助，搞清楚调用方式之后就可以直接使用，个人感觉还是很好上手的。
 
+案例如下
+问题：在下图中，用点表示城市，现有 A, B_1, B_2, C_1, C_2, C_3, D 共7个城市。点与点之间的连线表示城市间有道路相连。连线旁的数字表示道路的长度。先计划从城市 A 到城市 D 铺设一条沿道路的天然气管道，请设计出最小长度管道的铺设方案。
+![](https://imgcdn.hope-blog.top/2024-1-15/02.png)
+
+``` bash
+clc, clearvars, close all;
+% 创建图
+s = [1 1 2 2 2 3 3 3 4 5 6]; % start
+t = [2 3 4 5 6 4 5 6 7 7 7]; % target
+W = [2 4 3 3 1 2 3 1 1 3 4]; % weight
+G = digraph(s,t,W);
+p = plot(G,'Layout','force','EdgeLabel',G.Edges.Weight);
+
+
+%使用工具包中的shortestpath函数找到从节点1（即题中的A）到节点7（即题中的D）点的最短路径
+[path,dist,pred] = shortestpath(G,1,7,'Method','auto')
+highlight(p,path,'EdgeColor','r','LineWidth',1.5)
+
+
+
+```
+![](https://imgcdn.hope-blog.top/2024-1-15/03.png)
+![](https://imgcdn.hope-blog.top/2024-1-15/04.png)
 
 
 
