@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="en"><head><!-- Global Metadata --><meta charset="utf-8"><link rel="icon" type="image/svg+xml" href="/favicon.ico"><meta name="viewport" content="width=device-width"><meta name="generator" content="Astro v3.0.5"><title> [数模基础]chapter1——离散数学建模 - Hope </title><!-- Canonical URL --><!-- Primary Meta Tags --><title> [数模基础]chapter1——离散数学建模 - Hope </title><meta name="title" content=" [数模基础]chapter1——离散数学建模 - Hope "><meta name="description" content="Welcome to my website!"><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://blog2.loli.wang/blog/2024-01-15/"><meta property="og:title" content=" [数模基础]chapter1——离散数学建模 - Hope "><meta property="og:description" content="Welcome to my website!"><meta property="og:image" content="https://blog2.loli.wang/placeholder-social.jpg"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://blog2.loli.wang/blog/2024-01-15/"><meta property="twitter:title" content=" [数模基础]chapter1——离散数学建模 - Hope "><meta property="twitter:description" content="Welcome to my website!"><meta property="twitter:image" content="https://blog2.loli.wang/placeholder-social.jpg"><link href="https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"><link rel="stylesheet" href="/_astro/about.3c2ed744.css" />
 <style type="text/css">body{cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAAEEfUpiAAAAAXNSR0IArs4c6QAAArtJREFUWAntV01rGlEUHWuibcU2TVPTRonJpiL2a1FbaEtpAvobanGnIK4qKQjuhP4GseDWjYuii9CNiyJCN134segiJGlAcKELQWJDFZmeM+0TDRM/ppVuvHCceXfuPXPvfe/dN0qSmmxvb8vn9cvnFWPGFouF/pcHJjIEA/1AoXoTjUZpdfGbyFssFuVAIDDKP0Q34R1DlppuN/D+t+M87Qyy0Wh8VjO6RKVer5cymcyrXq/XUjPahPIxQOMlNQOdmvLf6wxI9SloNVdUKYXb7ZYPDg4+gMgwbYwiQRKcCCedTicdHh4emc3mB9D9EPpxVyWCVqvVgNET4CHwHHADJmCirMDiHnB1ouXCQLUCunq9/gZPrqg+nUK5zN7Rbre7sOVsiLUxhetvEwMJuCmPj4/ZNdYAZR9OyzAgIEmhUJB3d3fts5CMEJAklUrJ8Xicm3zi5hrpAHCUut2uVCqVpEgk8nV9ff1FOBz+AiKmdqEoEfh8PtnpdL6G1X2Ae+AlwFQmikKQTqeTsBQFZOiMbmIKZF8yGo13cbUBM1WfzkL4Js3OgmRx1ViB4XnmLvxvM8FAVrCpe/1+/zSfz7O/XAO4GGduD/CZWXiQbYq2srOzw/O+Xy6X30O/CvALZq6BMAC7CIAdhXC5XHKlUpFrtdrHra2t27AxAnOZJtUARCA2m03OZrMyDt5SMBh0Igi2/+H1g6E2mSobtshQKCQ5HI5H+Jb9dnZ2dpRIJNjteOr/VSBiXlmBO5iCE/RgJZVYLCZ5vd5KMpncR5u9brVa1/7I6g2IyWQy5HK5d36//xMcToGxPVshHfMzmAKPxyM3m82fOAj2YM/efhNgpmaAhyZbNqO8BVA3cqhgrEm4yjc6nc73arW6j/tnHANzW3TgVkRMAdcCM+H/DOr4iUD0gYUsKrCowFwr8AukF+p8blYsTwAAAABJRU5ErkJggg==),default;font-family:Regular}@font-face{font-family:Regular;src:url(/_astro/Regular.fa2d9585.ttf) format("truetype")}.text-shadow{text-shadow:0 .1875rem .3125rem #1c1f21}.waves{position:relative;width:100%;height:10vh;margin-bottom:-7px;min-height:80px;max-height:150px}.waves .content{position:relative;height:10vh;text-align:center;background-color:#fff}.waves .content a{margin:0 5px;font-size:12px;color:#333}.waves .content a:hover{color:#000}.waves .parallax>use{animation:move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite}.waves .parallax>use:nth-child(1){animation-delay:-2s;animation-duration:7s}.waves .parallax>use:nth-child(2){animation-delay:-3s;animation-duration:10s}.waves .parallax>use:nth-child(3){animation-delay:-4s;animation-duration:13s}.waves .parallax>use:nth-child(4){animation-delay:-5s;animation-duration:20s}@keyframes move-forever{0%{transform:translate3d(-90px,0,0)}to{transform:translate3d(85px,0,0)}}@media (max-width: 768px){.waves .waves{height:40px;min-height:40px}.waves .content{height:30vh}.waves h1{font-size:24px}}::-webkit-scrollbar{width:7px;height:7px}::-webkit-scrollbar-thumb{background-color:#14bae4;border-radius:4px}::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 5px rgba(0,0,0,.2);background:#f6f6f6}.svg-icon{width:25px;height:25px}
-</style><script type="module" src="/_astro/hoisted.20249fb4.js"></script></head><body><div class="h-screen"><div id="nav" class="z-50 h-16 w-full backdrop-blur-sm bg-white/30 dark:bg-black/30 flex items-center px-4 justify-center fixed transition duration-500 ease-in-out"><div class="container flex justify-between hidden md:flex"><div class="flex items-center"><div class="mr-4"><a href="/" title="Hope"><img src="/_astro/logo.17dba180.png" class="w-[150px] h-[40px]"></a></div><div class="flex dark:text-white"><div class="mr-4 cursor-pointer hover:text-sky-300 transition ease-in-out delay duration-300 flex items-center"><svg class="icon w-[20px] h-[20px] mr-2" aria-hidden="true"><use  xlink:href="#blog-baozi-01"></use></svg> <a href="/" title="Home"> Home </a></div><div class="mr-4 cursor-pointer hover:text-sky-300 transition ease-in-out delay duration-300 flex items-center"><svg class="icon w-[20px] h-[20px] mr-2" aria-hidden="true"><use  xlink:href="#blog-take-01"></use></svg> <a href="/archive" title="Archive"> Archive </a></div><div class="mr-4 cursor-pointer hover:text-sky-300 transition ease-in-out delay duration-300 flex items-center"><svg class="icon w-[20px] h-[20px] mr-2" aria-hidden="true"><use  xlink:href="#blog-shousi-01"></use></svg> <a href="/about" title="About"> About </a></div></div></div><div id="pcSearch" class="flex items-center cursor-pointer"><i class="iconfont blog-icon-test1 dark:text-white" style="font-size:26px"></i></div></div><div class="flex container justify-between items-center md:hidden"><div id="mobieMenu"><i class="iconfont blog-icon-test2 dark:text-white" style="font-size:26px;"></i></div><div class="flex items-center"><div class="mr-4"><a href="/" title="Hope"><img src="/_astro/logo.17dba180.png" class="w-[150px] h-[40px]"></a></div></div><div id="mobieSearch"><i class="iconfont blog-icon-test1 dark:text-white" style="font-size:26px"></i></div></div><!-- pc 搜索 --><div id="pcSearchInput" style="display: none;" class=" absolute py-24 rounded-b top-16 w-full  bg-white/30  dark:bg-darkBg2/30 animate__animated animate__fadeIn"><div class="flex justify-center "><div class="container"><div class="text-center w-full text-white text-3xl flex justify-center items-center mb-2"><svg class="icon w-[35px] h-[35px] mr-2" aria-hidden="true"><use xlink:href="#blog-kele-01"></use></svg> 请在这里搜索1
+</style><script type="module" src="/_astro/hoisted.e757f62c.js"></script></head><body><div class="h-screen"><div id="nav" class="z-50 h-16 w-full backdrop-blur-sm bg-white/30 dark:bg-black/30 flex items-center px-4 justify-center fixed transition duration-500 ease-in-out"><div class="container flex justify-between hidden md:flex"><div class="flex items-center"><div class="mr-4"><a href="/" title="Hope"><img src="/_astro/logo.17dba180.png" class="w-[150px] h-[40px]"></a></div><div class="flex dark:text-white"><div class="mr-4 cursor-pointer hover:text-sky-300 transition ease-in-out delay duration-300 flex items-center"><svg class="icon w-[20px] h-[20px] mr-2" aria-hidden="true"><use  xlink:href="#blog-baozi-01"></use></svg> <a href="/" title="Home"> Home </a></div><div class="mr-4 cursor-pointer hover:text-sky-300 transition ease-in-out delay duration-300 flex items-center"><svg class="icon w-[20px] h-[20px] mr-2" aria-hidden="true"><use  xlink:href="#blog-take-01"></use></svg> <a href="/archive" title="Archive"> Archive </a></div><div class="mr-4 cursor-pointer hover:text-sky-300 transition ease-in-out delay duration-300 flex items-center"><svg class="icon w-[20px] h-[20px] mr-2" aria-hidden="true"><use  xlink:href="#blog-shousi-01"></use></svg> <a href="/about" title="About"> About </a></div></div></div><div id="pcSearch" class="flex items-center cursor-pointer"><i class="iconfont blog-icon-test1 dark:text-white" style="font-size:26px"></i></div></div><div class="flex container justify-between items-center md:hidden"><div id="mobieMenu"><i class="iconfont blog-icon-test2 dark:text-white" style="font-size:26px;"></i></div><div class="flex items-center"><div class="mr-4"><a href="/" title="Hope"><img src="/_astro/logo.17dba180.png" class="w-[150px] h-[40px]"></a></div></div><div id="mobieSearch"><i class="iconfont blog-icon-test1 dark:text-white" style="font-size:26px"></i></div></div><!-- pc 搜索 --><div id="pcSearchInput" style="display: none;" class=" absolute py-24 rounded-b top-16 w-full  bg-white/30  dark:bg-darkBg2/30 animate__animated animate__fadeIn"><div class="flex justify-center "><div class="container"><div class="text-center w-full text-white text-3xl flex justify-center items-center mb-2"><svg class="icon w-[35px] h-[35px] mr-2" aria-hidden="true"><use xlink:href="#blog-kele-01"></use></svg> 请在这里搜索1
 </div><div class="p-4 flex justify-center items-center"><input type="text" placeholder="Search" class="py-2 px-4 rounded-full border-2 border-pink-500 focus:outline-none focus:border-pink-700 transition-colors duration-300 transform r-2 hover:-translate-y-1 transition ease-in-out delay-150 hover:scale-101 duration-300"><button class="ml-4 py-2 px-8 rounded-full right-0 top-1/2 bg-pink-500 text-white transform r-2 hover:-translate-y-1 transition ease-in-out delay-150 hover:scale-101 duration-300">
 搜索
 </button></div></div></div></div><!-- 手机搜索 --><div id="mobieSearchInput" style="display: none;" class="absolute py-8 rounded-b top-16 w-full bg-white/30 dark:bg-darkBg2/30 animate__animated animate__fadeIn"><div class="flex justify-center"><div class="container"><div class="text-center w-full text-white text-3xl flex justify-center items-center mb-2"><svg class="icon w-[35px] h-[35px] mr-2" aria-hidden="true"><use xlink:href="#blog-kele-01"></use></svg> 请在这里搜索
@@ -9,17 +9,68 @@
 </button></div></div></div></div><!-- 手机菜单 --><div id="mobieMenuList" style="display: none;" class="flex absolute top-16 w-full bg-white/30 dark:bg-darkBg2/30 animate__animated animate__fadeIn"><div class=" w-full left-0 w-64  "><ul class="py-4 w-full "><a href="/" title="Home" class="text-gray-800 w-full dark:text-white  "><li class="px-6 py-2 w-full hover:bg-gray-100/30 dark:hover:bg-darkBg2">Home</li></a><a href="/archive" title="Archive" class="text-gray-800 w-full dark:text-white  "><li class="px-6 py-2 w-full hover:bg-gray-100/30 dark:hover:bg-darkBg2">Archive</li></a><a href="/about" title="About" class="text-gray-800 w-full dark:text-white  "><li class="px-6 py-2 w-full hover:bg-gray-100/30 dark:hover:bg-darkBg2">About</li></a></ul></div></div></div><div class="h-2/4 w-full relative z-5"><div class="absolute inset-0 bg-black/50 opacity-50 z-5"></div><img src="/_astro/11.9c374f8b.jpg" class="h-full w-full object-cover"><!-- 标题 时间 作者信息啥的 --><div class="absolute inset-0 flex flex-col justify-center items-center"><div class="text-white text-center text-4xl font-semibold text-shadow tracking-widest"> [数模基础]chapter1——离散数学建模 - Hope</div><div class="flex text-white mt-4"><div class="mx-2 text-shadow font-semibold">[数模基础]chapter1——离散数学建模</div><!-- <div class="mx-2 text-shadow font-semibold">2021年06月18日</div>
       <div class="mx-2 text-shadow font-semibold">1,628阅读</div>
       <div class="mx-2 text-shadow font-semibold">21评论</div>
-      <div class="mx-2 text-shadow font-semibold">43点赞</div> --></div></div><!--  云朵波浪 --><div class="absolute bottom-0 w-full"><svg id="wavesSvg" class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)"></use><use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)"></use><use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)"></use><use xlink:href="#gentle-wave" x="48" y="2" fill="rgba(255,255,255,0.2)"></use></g></svg></div></div><div id="contextAs" class="pb-6 bg-cover bg-white  dark:text-white dark:bg-darkBg1 relative" style="background-image: url(/_astro/bg.0f3c96dc.jpeg)"><div class=" flex justify-center pt-4 min-h-[50vh]"><div class="container bg-white dark:bg-darkBg2 dark:text-white  text-red shadow rounded-md p-4 content"><h3 id="工具介绍">工具介绍</h3>
+      <div class="mx-2 text-shadow font-semibold">43点赞</div> --></div></div><!--  云朵波浪 --><div class="absolute bottom-0 w-full"><svg id="wavesSvg" class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)"></use><use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)"></use><use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)"></use><use xlink:href="#gentle-wave" x="48" y="2" fill="rgba(255,255,255,0.2)"></use></g></svg></div></div><div id="contextAs" class="pb-6 bg-cover bg-white  dark:text-white dark:bg-darkBg1 relative" style="background-image: url(/_astro/bg.0f3c96dc.jpeg)"><div class=" flex justify-center pt-4 min-h-[50vh]"><div class="container bg-white dark:bg-darkBg2 dark:text-white  text-red shadow rounded-md p-4 content"><h3 id="数学建模的六个步骤">数学建模的六个步骤</h3>
+<p>一、模型准备，收集信息
+二、模型假设，简化问题
+三、模型建立，在假设的基础上，利用适当的数学工具来刻画变量和常量之间的数学关系，建立相应的数学就够。选择建模方法，有题目得到关系式，将目标转化为某一变量的函数。
+四、模型求解，利用获取的数据资料，对模型的所有参数做出计算或近似计算，推到模型的公式，将数学表达式变形为建模方法的标准形式，通过限制条件，对这个模型进行求解，此过程往往使用数学软件进行计算。
+五、模型分析，对索要建立模型的思路进行阐述，对所得的结果进行数学上的分析。包括误差分析、数据稳定性分析等。
+六、模型检验，用非技术的语言回答实际问题。将模型分析结果与实际情形进行比较，以此来验证模型的准确性、合理性和适用性。如果模型与实际较吻合，则要对计算结果给出其实际含义，并进行解释。如果模型与实际吻合较差，则应该修改假设，再次重复建模过程。</p>
+<h3 id="数学建模比赛的分工协作及要求">数学建模比赛的分工协作及要求</h3>
+<ul>
+<li>
+<p>建模员
+系统掌握各类模型的主要功能、使用场景、所需条件、缺点或不足。</p>
+</li>
+<li>
+<p>程序员
+掌握MATLAB或Python，扎实的编程计算出，能够实现各类常见的算法，可以修改bug，可以利用软件做出精美的图片。</p>
+</li>
+<li>
+<p>写作员
+熟练撰写论文及各模块内容，使用规范的学术语言，能对论文进行排版</p>
+</li>
+</ul>
+<h3 id="赛题类型">赛题类型</h3>
+<ul>
+<li>
+<p>预测类
+根据已知条件及求解目的，往往将预测类问题分为：小样本内部预测，大样本内部预测，雄安样本未来预测，大样本随机因素或周期特征的未来预测，大样本的未来预测。
+<img src="https://imgcdn.hope-blog.top/2024-1-15/18.png" alt="">
+<img src="https://imgcdn.hope-blog.top/2024-1-15/19.png" alt=""></p>
+</li>
+<li>
+<p>评价类
+按照一定的标准对事物的发展或现状进行划分的过程。往往没有明确的指标体系和评价标准，往往需要察隅各类资料进行构建。解决评价类赛题的关键你事指标体系的构建，构建完评价体系后在选择合适的评价方法，体系建立应秉承全面、准确、独立的三要素。
+<img src="https://imgcdn.hope-blog.top/2024-1-15/20.png" alt=""></p>
+</li>
+<li>
+<p>机理分析类
+所机理分析是根据对现实对象特性的认识，分析其因果关系，找出反映内部机理的规律。在求解机理分析类问题时首先需要探寻与问题相关的物理，化学，经济等相关的知识，然后通过对已知数据或现象的分析对事物的内在规律做出必要的假设，最后通过构建合适的方程或关系式对其内在规律进行数值表达</p>
+</li>
+</ul>
+<p>赛题分析:机理分析立足于建立事物内部的规律，相对于其他类型的赛题均有章可循，机理分析类赛题往往需要结合众多关联知识才可以进行求解，如空气动力学，流体力学，热力学等
+<img src="https://imgcdn.hope-blog.top/2024-1-15/21.png" alt=""></p>
+<ul>
+<li>优化类
+指在现有现有条件固定的情况下，如何使目标效果达到最佳。如在一座城市公交车公司拥有的公交车数量是固定的，问如何安排线路能够使盈利达到最高。优化类问题往往需要分析三个关键因素:目标函数，决策变量和约束条件，三者往往缺一不可。
+赛题分析:解决优化类赛题必须知道优化的目的，约束的条件和所求解的关键变量，需要有较强的编程能力和赛题分析挖掘能力
+<img src="https://imgcdn.hope-blog.top/2024-1-15/22.png" alt="">
+<img src="https://imgcdn.hope-blog.top/2024-1-15/23.png" alt=""></li>
+</ul>
+<h3 id="工具介绍">工具介绍</h3>
 <p>常用的工具有很多，课程推荐的是MATLAB这个软件，是MATWORLD公司开发的建模软件，和很多高校有合作，我们学校开设的者们课程就是和MATWORLD公司合作的，所以会提供很多教程和证书权限。MATLAB的下载可以使用官方网页下载，也可以使用学校资源进行下载。</p>
 <p>下面是MATLAB入门课程 ，通过不到两个小时的课程就可以基本了解MATLAB使用方法。
 ![MATLAB入门指南]<a href="https://matlabacademy.mathworks.com/cn/details/matlab-onramp/gettingstarted">https://matlabacademy.mathworks.com/cn/details/matlab-onramp/gettingstarted</a></p>
 <h3 id="目录">目录</h3>
 <ul>
-<li>线性规划模型——一维切割问题</li>
+<li>线性规划</li>
 <li>图像处理</li>
 <li>空间距离- K聚类方法</li>
 <li>图论</li>
 </ul>
+<h3 id="线性规划问题">线性规划问题</h3>
+<p>人们遇到了要求利用现有资源来安排生产，使得经济效益最大化的问题，这类问题过程了运筹学一个重要的分支——数学规划，而线性规划则是数学规划的重点分支。</p>
 <h4 id="空间距离--k聚类方法">空间距离- K聚类方法</h4>
 <p>“两个总体”选取k聚类的方法
 （1）随机取k个元素，作为k个簇的中心.
@@ -69,6 +120,12 @@
 <span class="line"></span></code></pre>
 <p><img src="https://imgcdn.hope-blog.top/2024-1-15/01.png" alt="">
 使用下来，我觉得MATLAB最大的优点就是图像的反馈很清晰，使用很简便，属于初学者很好上手的一类工具，用这些工具来解决这些问题现得比较轻松。</p>
+<h4 id="神经网络">神经网络</h4>
+<p>神经网络的原理是通过改变神经元的权值，经过训练最终使得输出符合测试集的输出。</p>
+<ul>
+<li>单层感知器
+单层感知器可以实现分类的功能，通过阈值函数，输出为0表示属于第一类，输出为1表示属于第二类。</li>
+</ul>
 <h4 id="图论">图论</h4>
 <p>图论部分涉及到很多算法，很庆幸很多都是离散数学课上讲过的，学起来也没有那么吃力啦。用MATLAB来设计最大的好处就是MATLAB的工具包中设计好了很多算法函数，查看函数相关帮助，搞清楚调用方式之后就可以直接使用，个人感觉还是很好上手的。</p>
 <p>案例如下
@@ -90,4 +147,69 @@
 <span class="line"></span>
 <span class="line"></span></code></pre>
 <p><img src="https://imgcdn.hope-blog.top/2024-1-15/03.png" alt="">
-<img src="https://imgcdn.hope-blog.top/2024-1-15/04.png" alt=""></p></div></div><div class="flex justify-center mt-4"><div class="container bg-white dark:bg-darkBg2 dark:text-white shadow rounded-md p-4  text-center text-block hover:text-sky-300 transition ease-in-out delay duration-300"><div class="23"><a href="/" title="Hope">Hope - Welcome to my website! - © 2024 YOUR NAME HERE.</a></div></div></div><div class="fixed bottom-4 right-4 animate__animated  animate__fadeInRight"><div id="darkToggle" class="rounded-full bg-white w-[40px] h-[40px] flex justify-center items-center text-sky-400 dark:bg-darkBg2 dark:text-sky-600 shadow-xl"><i id="darkIcon" class="iconfont blog-taiyang" style="font-size: 30px;"></i></div><div id="toggleF11" class="rounded-full bg-white w-[40px] h-[40px] flex justify-center items-center text-sky-400 dark:bg-darkBg2 dark:text-sky-600 shadow-xl mt-2"><svg class="icon svg-icon" aria-hidden="true"><use xlink:href="#blog-tiantianquan-01"></use></svg></div></div></div></div></body></html>
+<img src="https://imgcdn.hope-blog.top/2024-1-15/04.png" alt=""></p>
+<h3 id="线性规划问题-1">线性规划问题</h3>
+<ul>
+<li>
+<p>基本概念：
+（1）有解
+（2）无解：不存在可行解或最优趋向无限大
+（3）可行域：全部可行解的集合
+（4）最优解：可行域中使目标函数达到最优的可行解</p>
+</li>
+<li>
+<p>线性规划模型的三种形式
+<img src="https://imgcdn.hope-blog.top/2024-1-15/05.png" alt="">
+线性规划模型的标准形式就是在一般模式的基础上咯用矩阵简化运算得到的。
+<img src="https://imgcdn.hope-blog.top/2024-1-15/06.png" alt=""></p>
+</li>
+<li>
+<p>三种模型都可以通过转化得到LP模型（即标准模型）
+（1）最大值和最小值的转化
+max z=-min(-z);
+（2）约束条件的转化
+<img src="https://imgcdn.hope-blog.top/2024-1-15/07.png" alt="">
+（3）变量的转化
+<img src="https://imgcdn.hope-blog.top/2024-1-15/08.png" alt="">
+（4）将不等式变为等式
+<img src="https://imgcdn.hope-blog.top/2024-1-15/09.png" alt="">
+<img src="https://imgcdn.hope-blog.top/2024-1-15/10.png" alt=""></p>
+</li>
+<li>
+<p>线性规划问题的求解（基于标准格式）
+简单算法——图形建模方法
+标准算法——单纯形方法
+实际模型——软件计算（MATLAB、LINGO）（最常使用）</p>
+</li>
+</ul>
+<p>单纯形算法：利用基础解系找到满足目标函数的基向量，所得到的常数项c0就是所求的最大值。若有解，则一定可以求出。
+<img src="https://imgcdn.hope-blog.top/2024-1-15/11.png" alt=""></p>
+<h3 id="整数线性规划模型">整数线性规划模型</h3>
+<ul>
+<li>整数线性规划模型 即 决策变量为整数的线性规划问题</li>
+</ul>
+<h4 id="0-1整数规划问题">0-1整数规划问题</h4>
+<ul>
+<li>
+<p>背包问题
+<img src="https://imgcdn.hope-blog.top/2024-1-15/12.png" alt="">
+背包问题是典型的0-1整数规划问题，因为对于每件商品只能选择买或者不买（0-1），决策变量（0-1）为整数。所以我们可以轻易写出模型方程，求解可以交给机器。
+<img src="https://imgcdn.hope-blog.top/2024-1-15/13.png" alt=""></p>
+</li>
+<li>
+<p>指派问题
+<img src="https://imgcdn.hope-blog.top/2024-1-15/14.png" alt="">
+<img src="https://imgcdn.hope-blog.top/2024-1-15/15.png" alt=""></p>
+</li>
+<li>
+<p>旅行商问题
+<img src="https://imgcdn.hope-blog.top/2024-1-15/16.png" alt="">
+<img src="https://imgcdn.hope-blog.top/2024-1-15/17.png" alt=""></p>
+</li>
+<li>
+<p>装箱问题</p>
+</li>
+<li>
+<p>多目标规划和动态规划模型</p>
+</li>
+</ul></div></div><div class="flex justify-center mt-4"><div class="container bg-white dark:bg-darkBg2 dark:text-white shadow rounded-md p-4  text-center text-block hover:text-sky-300 transition ease-in-out delay duration-300"><div class="23"><a href="/" title="Hope">Hope - Welcome to my website! - © 2024 YOUR NAME HERE.</a></div></div></div><div class="fixed bottom-4 right-4 animate__animated  animate__fadeInRight"><div id="darkToggle" class="rounded-full bg-white w-[40px] h-[40px] flex justify-center items-center text-sky-400 dark:bg-darkBg2 dark:text-sky-600 shadow-xl"><i id="darkIcon" class="iconfont blog-taiyang" style="font-size: 30px;"></i></div><div id="toggleF11" class="rounded-full bg-white w-[40px] h-[40px] flex justify-center items-center text-sky-400 dark:bg-darkBg2 dark:text-sky-600 shadow-xl mt-2"><svg class="icon svg-icon" aria-hidden="true"><use xlink:href="#blog-tiantianquan-01"></use></svg></div></div></div></div></body></html>
